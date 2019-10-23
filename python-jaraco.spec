@@ -7,10 +7,10 @@ Summary:	Common namespace files for jaraco.* modules
 Summary(pl.UTF-8):	Wspólna przestrzeń nazw dla modułów jaraco.*
 Name:		python-jaraco
 Version:	0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries/Python
-# taken from jaraco.packaging 5.1.1
+# taken from jaraco.packaging 6.2
 Source0:	jaraco.__init__.py
 URL:		https://github.com/jaraco/
 BuildRequires:	rpm-pythonprov
@@ -21,8 +21,7 @@ BuildRequires:	python-modules
 %if %{with python3}
 BuildRequires:	python3-modules
 %endif
-# beacuse of pkg_resources
-Requires:	python-setuptools
+Requires:	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -36,8 +35,7 @@ Wspólna przestrzeń nazw dla modułów jaraco.*.
 Summary:	Common namespace files for jaraco.* modules
 Summary(pl.UTF-8):	Wspólna przestrzeń nazw dla modułów jaraco.*
 Group:		Libraries/Python
-# beacuse of pkg_resources
-Requires:	python3-setuptools
+Requires:	python3-modules
 
 %description -n python3-jaraco
 Common namespace files for jaraco.* modules.
