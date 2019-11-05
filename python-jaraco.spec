@@ -7,7 +7,7 @@ Summary:	Common namespace files for jaraco.* modules
 Summary(pl.UTF-8):	Wspólna przestrzeń nazw dla modułów jaraco.*
 Name:		python-jaraco
 Version:	0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries/Python
 # taken from jaraco.packaging 6.2
